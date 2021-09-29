@@ -1,12 +1,12 @@
 # Bagel Protocol Ver 1.0
 
-# Token
+## Token
 
 | Name        | Address     |
 | ----------- | ----------- |
 | Bagel       | 0xBb238FcE6E2eE90781cD160C9C6eAf3a4CfAD801 |
 
-# Lend
+## Lend
 
 | Name        | Address     |
 | ----------- | ----------- |
@@ -20,7 +20,7 @@
 | gCAKE | 0x85CF44015E02A919b65E7936be7df917F843Bd36 |
 | gUSDC | 0x40eD7226b07ab46E64Ca775A498981E9C8270400 |
 
-# Vault
+## Vault
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -35,7 +35,8 @@
 | gETH Gauge  | 0x597c238CD0C81032a9d01Bcc7c9f5E21157252A9 |
 | gCAKE Gauge | 0xdb99936791b3f12F7DD02dFE27e8a56da53884A4 |
 | gUSDC Gauge | 0x576D78c60accc0849840f66B7D32DDb35281dFFE |
-# Leverage（MDEX V1）
+
+## Leverage（MDEX V1）
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -85,7 +86,7 @@
 | Goblin |0xd57954e9d2106b613a00F57768e53857BF04D3C5          |
 | StrategyTwoSides |0x35896CcCe254637341fda1449FaAE7c3A9989ee4           |
 
-# Leverage（MDEX V2）
+## Leverage（MDEX V2）
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -135,7 +136,7 @@
 | Goblin |0x34CcB824C8AFa16B455c9F73890C0CBcEE889cE8          |
 | StrategyTwoSides |0x85B30365eac48dCAEB2e9F5726247A9Bd0AAb6cF           |
 
-# Leverage（CAKE）
+## Leverage（CAKE）
 
 | Name      | Address  |
 | ----------- | ----------- |
