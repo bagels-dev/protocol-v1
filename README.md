@@ -1,12 +1,10 @@
-# Bagel Protocol Ver 1.0
-
-## Token
+# Token
 
 | Name        | Address     |
 | ----------- | ----------- |
 | Bagel       | 0xBb238FcE6E2eE90781cD160C9C6eAf3a4CfAD801 |
 
-## Lend
+# Lend
 
 | Name        | Address     |
 | ----------- | ----------- |
@@ -20,7 +18,7 @@
 | gCAKE | 0x85CF44015E02A919b65E7936be7df917F843Bd36 |
 | gUSDC | 0x40eD7226b07ab46E64Ca775A498981E9C8270400 |
 
-## Vault
+# Vault
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -35,8 +33,7 @@
 | gETH Gauge  | 0x597c238CD0C81032a9d01Bcc7c9f5E21157252A9 |
 | gCAKE Gauge | 0xdb99936791b3f12F7DD02dFE27e8a56da53884A4 |
 | gUSDC Gauge | 0x576D78c60accc0849840f66B7D32DDb35281dFFE |
-
-## Leverage（MDEX V1）
+# Leverage（MDEX V1）
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -86,7 +83,7 @@
 | Goblin |0xd57954e9d2106b613a00F57768e53857BF04D3C5          |
 | StrategyTwoSides |0x35896CcCe254637341fda1449FaAE7c3A9989ee4           |
 
-## Leverage（MDEX V2）
+# Leverage（MDEX V2）
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -136,7 +133,7 @@
 | Goblin |0x34CcB824C8AFa16B455c9F73890C0CBcEE889cE8          |
 | StrategyTwoSides |0x85B30365eac48dCAEB2e9F5726247A9Bd0AAb6cF           |
 
-## Leverage（CAKE）
+# Leverage（CAKE）
 
 | Name      | Address  |
 | ----------- | ----------- |
@@ -169,3 +166,30 @@
 | StakingRewards |0x4eBf4522046c5D1AAB5881C5c8A1679ba41c71B7          |
 | Goblin |0xa17632a7cf4F1Fb5B930b515a51310c3bda48c6E           |
 | StrategyTwoSides |0x321af2b9E4927F1fa64cBE88025F0092f81a0207          |
+
+# Revenue Distribution Contract（BSC）
+
+| Name      | Address（pre） | Address（App） | Address（App V2） |   explain |
+| ----------- | ----------- |----------- |----------- |----------- |
+| MiningPoolProxy    | 0x8327AD6578bf7120f8d12EeDd2e039D9a778c5f6         | 0xd35b69580779494FB0ce5972A6276021Aee0B0DB         |0xD46511D206033d0B627CEef6E97Ba538294b7224         |Pool Proxy for farming taxes, the function is to collect farming rewards, requires staking contract setting permissions.         |  
+| MDXUnderlyingBurner    | 0xB665C2f5e3D4e0DEFb27d7AB6181d5Ce81b37fAd         | 0x79A50eDa3fa79291dc23525aC5E072B552D72cE7         |0xC18a64545F3C0287916891F6dC36C10a1865eF70         |The burner of farming taxes, the function is to deposit MDX in bank and convert to gMDX.         | 
+| CAKEUnderlyingBurner    |          | 0xc136aAbE79E33617F73f5049672d1271E739980F         |0xe1262c774Aa66D31D1c5D1458Ed398A621969Efc         |     | 
+| MDXFeeDistributor    | 0xa2cD8D6AD6737fC99389a1824EB92E4B869d0384         | 0x8a5893fe5cf4e45C1C0D766B790B13539b60003d         |0xa61c657A4457433b5AC90063D3F0c6f617188639           |Farming Taxes Distribution Contract    | 
+| CAKEFeeDistributor    |          | 0x695b9C71607a45dA0c2Ba06Efee7AB9B4845483d     | 0x202F2de30251Daa470A6C27dF8f520ff2051d8F9     |       | 
+| BankPoolProxy    |xe98F9c8BC8875fD020a5FC86357344470fF13CC5  |0xb2D8130B2FF8D5250fe410a6d8c3855281B3Bd40  |0x78C2E7fB5b73Dc0cdeDC0674B13e2cDbe1C184F5  |PoolProxy for interest spreads, the function is to collect the income of interest spreads and require the bank to actively transfer the income to the contract    | 
+| BNBUnderlyingBurner    | 0xCFf718C67307b90a7690Fdb1A459a55a57fd3210         | 0x98B4fa59CaC70Fe0C2A44dBF9f4913CeF4EC4f0C     |0x3Cb39485eDC373217A4D2DA87dd6f8A6B94843EA     | The burner of interest spreads income, each asset corresponds to a burner, the burner corresponds to a Fee Distributor.       | 
+| USDTUnderlyingBurner    | 0xd66612057F59bFEE31A8B7aB1BA7F64Dd9416A3c         | 0xe91FB44E7ec0f8c8c96FeB8778901fCBdEB870c6     | 0xa7A29d91Afe5D45DBB0742AfD58312cCe0Db802d     |    | 
+| BTCBUnderlyingBurner    | 0x6ce4173AeBf918261A55E8215220Cd7508878f0e         | 0x689B4933cF8a145Ed5AEA8f74D91EA592aD930b3     | 0x8865700aCA7D403f4Bf603799DAeA641caF34915     |     | 
+| ETHUnderlyingBurner   | 0x5E7298395b540E89e01012Ea0967ae034ef373EF         | 0xE04B7219ce43C88DcC1d618CdAE8FD62C19E1546     | 0xeDD3379d57d344Add156daBe51E6075Da51fA4B0     |     | 
+| MDXUnderlyingBurner    | 0x85278a70DAaeA640732Ce43169729AE882e0cEdC         | 0x388863ba36E46fDc553CEa006D1cb29fc58B1c3f     | 0x84E739bA7A6fB97556c0D85be1d298f90B1Db3aD     |     | 
+| BUSDUnderlyingBurner  | 0x38973AC811494d62c44B4f215D39679399Bbb8E9         | 0x180A4953A71C612339A0B9c7715A31495365947D     | 0x077ef50451C8230Aa20176A999bFAD20c18c2f3c     |     | 
+| CAKEUnderlyingBurner |         | 0x8E67399391ff1c8C255b064237a308a06d0642C2     | 0x4166420632DA0550d813266561C83584254362bD     |     | 
+| USDCUnderlyingBurner  |          | 0xABDaF3EAbAEdCF257BED503864A4f0148A3E0441     | 0x0227F2672525F7A57839fA25F824E17f80c63bb6     |     | 
+| BNBFeeDistributor  |  0x6eAa404f9d9D4094596B28a586627c8c9d0a108B        | 0x728b9c8fdf158f3cC9824980c9141E7D07c8567e     |0x45004AaEfbE8C271f54C03210b721F677696eF34     | The distribution contract of interest spreads, each asset corresponds to Fee Distributor.     | 
+| USDTFeeDistributor  | 0x45388fE77Db3425F3Edd4e42690beF0638C8FDC0        | 0x538AE665C80E2bcfD7968C711E8373784A91E5C4     |0x758c9e2353f8ddC7C9dDa20edf834F1CffDD9Af8     |      | 
+| BTCBFeeDistributor  | 0x063728c1e791d5E04954560201A629eD6D195488        | 0x4ea26d6c6eC13e91Af0065DA70040210650A708f     | 0x7A7371E8467fB42284fF27FAc38458c076499f6e     |     | 
+| ETHFeeDistributor  | 0x94672c26704CC5E15F749843fd8602A09C06AE26        | 0x8c850CD5Fe594040E83996a8094582D827b5D661     | 0xEd4AC5126D35D0A419426304F65c8E46dF13129E     |     | 
+| MDXFeeDistributor  | 0xfC42558BFd765E25f8185c76Ee946813a7FA0ab0        | 0xa9eE279FeDC906B6B4FF597c817A1ce8100111F0     |0x383391FaE643E1E19Cad8F62A91086be58924C99     |      | 
+| BUSDFeeDistributor  | 0xe563Eb61925Fa341b368F1158704cc563135c890        | 0xd31E07A67355D0ac43AB11808f6a2eA7A9e3DD28     | 0xf7C5f4aeec37Ead93F1448dbcF0967Cdf7a88f35     |     | 
+| CAKEFeeDistributor  |       | 0xa01303B24169552b1Da602F70D6C947d909b7166     | 0x13a97f376AC3e265783f512B2B32780a3E1d3F33     |     | 
+| USDCFeeDistributor  |        | 0xC6C925C2aDD159f0867FF010b72A984B6BdC7571    |0x8a92EBB8fAe709399e8A17B02a28A04D8cEFD2AA    |      | 
